@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Underground VOD</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/vod_style.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/vod_main.js"></script>
+    <script src="js/vod_gen.js"></script>
+    <script src="js/vod_series_class.js"></script>
+    <script src="js/elements.js"></script>
+    <script src="js/vod_categories.js"></script>
+</head>
+
+<body id="idbg">
+    <div class="dark-window" id="idark">
+        <div class="forfa">
+                <i onclick="closeWindow()" id="idfa" class="fa fa-3x fa-window-close text-danger" aria-hidden="true"></i>
+        </div>
+        <br>
+        <div class="align-items-center dark-clickable w-100 h-100">
+            <div class="bg-secondary text-left dark-box p-4" id="idbox"></div>
+            <div class="text-center" id="idframe"></div>
+        </div>
+    </div>
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row text-align-center">
+                <nav class="col text-center m-4">
+                    <a onclick="generateAllMovies()" href="#">Browse Movies</a>
+                    <a onclick="showCategories()" href="#">Categories</a>
+                    <a onclick="showSeries()" href="#">Series</a>
+                    <a onclick="showAPI()" href="#">API</a>
+<!--                    <a href="#">Request a movie</a>-->
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="strip container-fluid">
+        <div class="container">
+            <h1 id="idh1" class="text-center text-white">Browse Movies</h1>
+            <div class="row text-align-center" id="idnav">
+                <nav class="col text-center m-3" id="idcat"></nav>
+            </div>
+        </div>
+    </div>
+    <main class="container-fluid">
+        <div class="container">
+            <div id="idbrowse" class="row text-white justify-content-center">
+
+            </div>
+            <div id="idapi" class="mt-5 mh-100 mw-100">
+                <div class="bg-secondary p-4 api-box h-100">
+                    <h2>http://35.204.167.3/movies/movies.json</h2>
+                    <br>
+                    <a href="http://35.204.167.3/movies/movies.json" target="_blank">movies.json</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="container">
+
+        </div>
+    </footer>
+</body>
+
+</html>
