@@ -2,7 +2,7 @@
 
 # http://35.204.167.3/movies/
 
-Web project - Movies streaming with option to add Hebrew subtitles.
+Web project - Movies online streamings (1080p) with option to add Hebrew subtitles.
 
 This is a one-page website with JavaScript dynamic HTML implementations.
 
