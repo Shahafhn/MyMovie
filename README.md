@@ -11,7 +11,3 @@ All pictures, movies and subtitles are sitting on a cloud linux server.
 The website works through a personal JSON file; API link inside the link above ^
 
 
-
-
-
-By the way, the "Series" navigation button is pretty cool.
